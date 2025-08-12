@@ -1,0 +1,169 @@
+@import url("./utility.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+*{
+     font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #fafafa;
+    --primary-color: #3b82f6;
+    --accent-color: #a9a9a9;
+}
+
+.heading{
+    height: 30%;
+    background-color: aqua;
+    padding: 8px 2rem;
+    color:whitesmoke;
+    
+}
+
+.heading-1{
+    font-size: 2.5rem;
+    
+    
+}
+
+.d-flex{
+    display: flex;
+  
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.nav-ul{
+    list-style: none;
+}
+
+.list{
+    display: inline-block;
+    padding: 0 10px;
+}
+.direction-column{
+flex-direction: column;
+
+}
+
+
+.container{
+    width: 35vw;
+   
+    transform: translateX(-50%);
+    margin-left: 50vw;
+    padding-top: 2rem;
+    
+
+}
+
+.text-area {
+    width: 100%;
+    padding: 4px 8px 0 8px;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.title {
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.note{
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    color: rgb(75, 49, 49);
+    background-color: aquamarine;
+}
+
+.add-btn {
+    right: 1.25rem;
+    bottom: -1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.pinned-notes-container{
+    padding-bottom: 3rem;
+}
+
+.notes-display,
+.archive-notes {
+    padding: 2rem 4rem;
+}
+
+.single-note {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    width: 18vw;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.single-note span {
+    white-space: pre-wrap;
+    word-break: break-word;
+    align-self: flex-start;
+}
+
+.single-note-title {
+    font-weight: 600;
+}
+
+
+.single-note p {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.del-btn {
+    color: var(--primary-color);
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.single-note:hover > .title-container > .del-btn {
+    visibility: visible;
+}
+
+.single-note:hover > .options > .btn {
+    visibility: visible;
+}
+
+.options {
+    margin-top: 1rem;
+}
+
+.pinned-btn {
+    color: var(--primary-color);
+}
+
+.pin {
+    color: red;
+}
